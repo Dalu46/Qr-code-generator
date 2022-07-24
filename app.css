@@ -1,0 +1,80 @@
+
+
+body {
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#18a6ff, #06f7ff);
+    background-size: 600%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+  }
+
+.container {
+    margin: 10% auto;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 6px;
+    transform: scale(0.8);
+}
+
+.input {
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.input::placeholder {
+    color: rgb(200, 200, 200);
+}
+.img {
+    height: 70%;
+    width: 85%;
+    object-fit: contain;
+    border: 1px solid;
+    padding: 15px 0;
+}
+
+.btn {
+    height: 50px;
+    width: 84%;
+    margin: 13px 0 19px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(22, 157, 187);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 560px) {
+    
+    body {
+        background-size: 600% 200%;
+    }
+
+    .container {
+        width: 95%;
+        margin-left: -15px;
+    }
+
+    .btn {
+        width: 86%;
+    }
+
+    .img {
+        width: 80%;
+        height: 65%;
+        padding: 5px 15px;
+    }
+}
+
